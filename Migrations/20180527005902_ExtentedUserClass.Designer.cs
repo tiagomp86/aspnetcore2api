@@ -11,8 +11,8 @@ using System;
 namespace DatingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180526005141_ExtendedUserClass")]
-    partial class ExtendedUserClass
+    [Migration("20180527005902_ExtentedUserClass")]
+    partial class ExtentedUserClass
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,7 +61,7 @@ namespace DatingApp.API.Migrations
 
                     b.Property<string>("Introduction");
 
-                    b.Property<string>("KnowsAs");
+                    b.Property<string>("KnownAs");
 
                     b.Property<DateTime>("LastActive");
 

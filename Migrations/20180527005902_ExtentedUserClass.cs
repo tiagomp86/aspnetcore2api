@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace DatingApp.API.Migrations
 {
-    public partial class ExtendedUserClass : Migration
+    public partial class ExtentedUserClass : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -46,7 +46,7 @@ namespace DatingApp.API.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "KnowsAs",
+                name: "KnownAs",
                 table: "Users",
                 nullable: true);
 
@@ -124,7 +124,7 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "KnowsAs",
+                name: "KnownAs",
                 table: "Users");
 
             migrationBuilder.DropColumn(
