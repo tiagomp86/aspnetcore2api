@@ -11,8 +11,8 @@ using System;
 namespace DatingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180607233226_MessageEntityAdded")]
-    partial class MessageEntityAdded
+    [Migration("20180609200451_mysqlinitialcreate")]
+    partial class mysqlinitialcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
